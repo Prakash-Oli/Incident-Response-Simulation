@@ -1,0 +1,21 @@
+# Python Requirements for Incident Response Simulation Project
+# Note: This project uses only Python standard library
+# No external dependencies are required
+
+# Python 3.7+ is recommended
+# Standard library modules used:
+# - datetime
+# - collections
+# - json
+# - re
+# - typing
+
+# If you want to enhance the scripts, consider adding:
+# - pandas (for data analysis)
+# - matplotlib (for visualization)
+# - requests (for threat intelligence API integration)
+# - python-dateutil (for advanced date parsing)
+
+# For now, no external packages are required
+# Run with: python script_name.py
+

@@ -1,0 +1,12 @@
+# HTTP Proxy Log - Suspicious Web Activity
+# Format: Timestamp | Source IP | Method | URL | Status Code | User-Agent | Referer
+
+2025-11-03 08:15:23 | 192.168.1.105 | GET | https://legitimate-site.com/login | 200 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) | -
+2025-11-03 08:16:12 | 192.168.1.105 | GET | http://malicious-download.net/payload.exe | 200 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) | legitimate-site.com
+2025-11-03 08:17:45 | 192.168.1.105 | POST | http://malicious-download.net/upload | 200 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) | -
+2025-11-03 08:19:22 | 192.168.1.105 | GET | http://update.microsoft-fake.com/update.exe | 302 | WindowsUpdateAgent/10.0 | -
+2025-11-03 08:20:15 | 192.168.1.105 | GET | http://malicious-download.net/script.js | 200 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) | -
+2025-11-03 09:05:42 | 192.168.1.105 | GET | http://c2-server.example/command | 200 | CustomAgent/1.0 | -
+2025-11-03 09:15:30 | 192.168.1.105 | GET | https://legitimate-site.com/dashboard | 200 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) | -
+2025-11-03 09:30:18 | 192.168.1.105 | POST | http://c2-server.example/data | 200 | CustomAgent/1.0 | -
+

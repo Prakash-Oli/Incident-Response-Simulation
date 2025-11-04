@@ -1,0 +1,20 @@
+# System Event Log - Endpoint Compromise Indicators
+# Format: Timestamp | Event ID | Event Type | Source | Description | User
+
+2025-11-03 08:15:30 | 4624 | Logon | Security | Successful logon: user jsmith@company.local | SYSTEM
+2025-11-03 08:16:15 | 4688 | Process | Security | Process created: C:\Windows\System32\cmd.exe | jsmith
+2025-11-03 08:16:20 | 4688 | Process | Security | Process created: C:\Users\jsmith\Downloads\payload.exe | jsmith
+2025-11-03 08:16:25 | 7034 | Service | System | Service stopped: Windows Defender Service | SYSTEM
+2025-11-03 08:17:00 | 4688 | Process | Security | Process created: C:\Windows\System32\powershell.exe | payload.exe
+2025-11-03 08:17:05 | 4698 | Task | Security | Scheduled task created: MicrosoftUpdateTask | payload.exe
+2025-11-03 08:17:30 | 5145 | Network | Security | Network share object accessed: \\192.168.1.105\C$ | payload.exe
+2025-11-03 08:18:00 | 4672 | Privilege | Security | Special privileges assigned: SeDebugPrivilege, SeTcbPrivilege | payload.exe
+2025-11-03 08:19:15 | 1102 | Audit | Security | Audit log cleared | SYSTEM
+2025-11-03 08:20:30 | 4624 | Logon | Security | Successful logon: user administrator@company.local | payload.exe
+2025-11-03 08:21:00 | 5145 | Network | Security | Network share object accessed: \\172.16.0.5\C$ | payload.exe
+2025-11-03 08:22:10 | 4688 | Process | Security | Process created: C:\Windows\System32\wmic.exe | payload.exe
+2025-11-03 08:22:15 | 4688 | Process | Security | Process created: C:\Windows\System32\reg.exe | payload.exe
+2025-11-03 08:23:00 | 4656 | Object | Security | Handle requested: C:\Windows\System32\config\sam | payload.exe
+2025-11-03 09:05:42 | 5145 | Network | Security | Network share object accessed: \\10.0.0.5\C$ | payload.exe
+2025-11-03 09:15:30 | 4624 | Logon | Security | Successful logon: user jsmith@company.local | SYSTEM
+

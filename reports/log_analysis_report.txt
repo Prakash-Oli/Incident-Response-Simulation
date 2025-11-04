@@ -1,0 +1,29 @@
+============================================================
+LOG ANALYSIS SUMMARY
+============================================================
+
+Critical Port Activity: 6 events
+  - 2025-11-03 08:17:33: Port 4444 connection to 198.51.100.67
+  - 2025-11-03 08:18:01: Port 4444 connection to 198.51.100.67
+  - 2025-11-03 08:21:10: Port 4444 connection to 198.51.100.67
+  - 2025-11-03 08:23:15: Port 4444 connection to 198.51.100.67
+  - 2025-11-03 09:05:42: Port 4444 connection to 198.51.100.67
+
+Suspicious Domain Queries: 9 events
+  - 2025-11-03 08:16:05: Query for malicious-download.net
+  - 2025-11-03 08:16:10: Query for malicious-download.net
+  - 2025-11-03 08:17:25: Query for c2-server.example
+  - 2025-11-03 08:18:15: Query for c2-server.example
+  - 2025-11-03 08:19:30: Query for update.microsoft-fake.com
+
+Malicious Downloads: 2 events
+  - 2025-11-03 08:16:12: Download from http://malicious-download.net/payload.exe
+  - 2025-11-03 08:20:15: Download from http://malicious-download.net/script.js
+
+Potential Data Exfiltration: 1 events
+  - 2025-11-03 09:30:18: POST to http://c2-server.example/data
+
+============================================================
+Suspicious IPs Detected: 1
+Suspicious Domains Detected: 3
+============================================================

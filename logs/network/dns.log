@@ -1,0 +1,15 @@
+# DNS Query Log - Suspicious Domain Resolution Activity
+# Format: Timestamp | Source IP | Query Type | Domain | Response | Status
+
+2025-11-03 08:15:20 | 192.168.1.105 | A | legitimate-site.com | 203.0.113.45 | SUCCESS
+2025-11-03 08:16:05 | 192.168.1.105 | A | malicious-download.net | 198.51.100.67 | SUCCESS
+2025-11-03 08:16:10 | 192.168.1.105 | A | malicious-download.net | 198.51.100.67 | SUCCESS
+2025-11-03 08:17:25 | 192.168.1.105 | A | c2-server.example | 198.51.100.67 | SUCCESS
+2025-11-03 08:18:15 | 192.168.1.105 | AAAA | c2-server.example | 2001:db8::1 | SUCCESS
+2025-11-03 08:19:30 | 192.168.1.105 | A | update.microsoft-fake.com | 198.51.100.67 | SUCCESS
+2025-11-03 08:20:45 | 192.168.1.105 | A | c2-server.example | 198.51.100.67 | SUCCESS
+2025-11-03 08:22:10 | 192.168.1.105 | A | c2-server.example | 198.51.100.67 | SUCCESS
+2025-11-03 09:05:30 | 192.168.1.105 | A | c2-server.example | 198.51.100.67 | SUCCESS
+2025-11-03 09:15:20 | 192.168.1.105 | A | legitimate-site.com | 203.0.113.45 | SUCCESS
+2025-11-03 09:30:10 | 192.168.1.105 | A | c2-server.example | 198.51.100.67 | SUCCESS
+

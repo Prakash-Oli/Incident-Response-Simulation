@@ -1,0 +1,18 @@
+# File Access Log - Suspicious File Activity
+# Format: Timestamp | Process | Action | File Path | Result | User
+
+2025-11-03 08:16:15 | payload.exe | CREATE | C:\Users\jsmith\Downloads\payload.exe | SUCCESS | jsmith
+2025-11-03 08:16:20 | payload.exe | READ | C:\Windows\System32\kernel32.dll | SUCCESS | jsmith
+2025-11-03 08:17:00 | payload.exe | WRITE | C:\Windows\Temp\script.ps1 | SUCCESS | jsmith
+2025-11-03 08:17:30 | payload.exe | WRITE | C:\Windows\System32\drivers\backdoor.sys | SUCCESS | SYSTEM
+2025-11-03 08:18:00 | payload.exe | READ | C:\Windows\System32\config\sam | SUCCESS | SYSTEM
+2025-11-03 08:18:05 | payload.exe | READ | C:\Windows\System32\config\system | SUCCESS | SYSTEM
+2025-11-03 08:19:00 | payload.exe | WRITE | C:\Windows\Temp\credentials.txt | SUCCESS | jsmith
+2025-11-03 08:20:00 | payload.exe | CREATE | C:\Windows\System32\svchost.exe.backup | SUCCESS | SYSTEM
+2025-11-03 08:20:05 | payload.exe | WRITE | C:\Windows\System32\svchost.exe | SUCCESS | SYSTEM
+2025-11-03 08:22:15 | payload.exe | WRITE | C:\temp\sam_backup.reg | SUCCESS | jsmith
+2025-11-03 08:23:00 | payload.exe | READ | C:\Users\jsmith\Documents\passwords.txt | SUCCESS | jsmith
+2025-11-03 08:23:30 | payload.exe | WRITE | C:\Windows\Temp\exfil_data.zip | SUCCESS | jsmith
+2025-11-03 09:05:42 | payload.exe | READ | C:\Users\jsmith\Desktop\financial_data.xlsx | SUCCESS | jsmith
+2025-11-03 09:30:18 | payload.exe | WRITE | C:\Windows\Temp\exfil_data.zip | SUCCESS | jsmith
+
